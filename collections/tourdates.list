@@ -1,0 +1,11 @@
+<squarespace:query collection="tourdates">
+  <div class="tour-list">
+    {.repeated section items}
+      <div class="tour-item" id="post-{id}">
+        <span class="date">{customContent.tourdateMonth} {customContent.tourdateDay}</span>
+        <h3 class="title">{title}</h3>
+        <a href="{customContent.ticketLink1}" class="tickets">Buy Tickets</a>
+      </div>
+    {.end}
+  </div>
+</squarespace:query>
